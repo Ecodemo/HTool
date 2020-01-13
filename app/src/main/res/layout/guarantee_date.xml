@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:textColor="?attr/TextColor"
+			android:text="生产日期："/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:hint="格式：年-月-日"
+			android:textColor="?attr/TextColor"
+			android:background="@drawable/frame"
+			android:id="@+id/date"
+			android:inputType="date"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_marginTop="10dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:textColor="?attr/TextColor"
+			android:text="保质天数："/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="110dp"
+			android:ems="10"
+			android:textColor="?attr/TextColor"
+			android:background="@drawable/frame"
+			android:id="@+id/day"
+			android:inputType="number"/>
+
+		<Spinner
+			android:layout_height="match_parent"
+			android:textColor="?attr/TextColor"
+			android:layout_width="wrap_content"
+			android:background="@drawable/frame"
+			android:id="@+id/company"/>
+
+	</LinearLayout>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="290dp"
+		android:text="计算"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/frame"
+		android:id="@+id/calculation"/>
+
+	<LinearLayout
+		android:layout_height="100dp"
+		android:layout_width="290dp"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:background="@drawable/frame">
+
+		<TextView
+			android:textColor="?attr/TextColor"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:id="@+id/message"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

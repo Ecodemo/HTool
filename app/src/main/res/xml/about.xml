@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<Preference
+		android:key="author"
+		android:title="联系作者" />
+	
+	<Preference
+		android:key="q_group"
+		android:title="官方Q群" />
+	
+	<Preference
+		android:key="blog"
+		android:title="官方博客" />
+	
+	<Preference
+		android:key="update"
+		android:title="检查更新" />
+	
+</PreferenceScreen>

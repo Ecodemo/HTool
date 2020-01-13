@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar" >
+		<item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+		
+		<!-- <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item> -->
+		
+		<item name="FrameColor">@color/FrameColor</item>
+		<item name="TextColor">@android:color/black</item>
+		<item name="NavigationBack">@android:color/black</item>
+		<item name="Logo">@drawable/logo_black</item>
+		<item name="triangle">@drawable/triangle_black</item>
+		<item name="search">@drawable/ic_search_black_24dp</item>
+	</style>
+	
+	<style name="BlackTheme" parent="@android:style/Theme.Material.NoActionBar" >
+		<item name="android:statusBarColor">@color/statusBarColor_black</item>
+        <item name="android:colorPrimary">@color/colorPrimary_black</item>
+        <item name="android:windowBackground">@color/windowBackground_black</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+
+		<!-- <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item> -->
+		
+		<item name="FrameColor">@color/FrameColor_black</item>
+		<item name="TextColor">@android:color/white</item>
+		<item name="NavigationBack">@android:color/white</item>
+		<item name="Logo">@drawable/logo_white</item>
+		<item name="triangle">@drawable/triangle_white</item>
+		<item name="search">@drawable/ic_search_white_24dp</item>
+	</style>
+	
+	<style name="window_anim_style"> 
+		<item name="android:windowEnterAnimation">@anim/popupwindow_show_anim</item> 
+		<item name="android:windowExitAnimation">@anim/popupwindow_hidden_anim</item> 
+	</style>
+
+</resources>

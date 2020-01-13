@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/view_parent">
+
+	<LinearLayout
+		android:layout_height="35dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:gravity="left|center_vertical"
+			android:layout_weight="1.0"
+			android:paddingLeft="15dp"
+			android:textSize="16sp"
+			android:textColor="?attr/FrameColor"
+			android:id="@+id/title"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:background="@drawable/end_switch"
+			android:gravity="center"
+			android:layout_margin="5dp">
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/more"
+				android:id="@+id/more"/>
+
+			<View
+				android:background="?android:attr/dividerHorizontal"
+				android:layout_height="match_parent"
+				android:layout_width="1dp"/>
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/exit"
+				android:padding="2dp"
+				android:id="@+id/exit"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/view"/>
+
+</LinearLayout>
+

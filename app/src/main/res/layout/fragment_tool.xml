@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:fillViewport="true"
+		android:scrollbars="none">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:padding="20dp">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:background="@drawable/round">
+
+					<EditText
+						android:layout_height="30dp"
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_weight="1.0"
+						android:singleLine="true"
+						android:background="@null"
+						android:hint="在这里搜索一下吧！"
+						android:id="@+id/search"/>
+
+					<View
+						android:background="?android:attr/dividerHorizontal"
+						android:layout_height="match_parent"
+						android:layout_width="1dp"/>
+
+					<ImageView
+						android:layout_height="30dp"
+						android:layout_width="30dp"
+						android:src="?attr/search"
+						android:layout_marginLeft="5dp"/>
+
+				</LinearLayout>
+
+				<com.smile.box.app.widget.LineLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:color="?attr/TextColor"
+					android:text="工具"
+					android:layout_marginTop="20dp">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<com.smile.box.app.widget.CustomeGridView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:numColumns="2"
+							android:id="@+id/life"/>
+
+					</LinearLayout>
+
+				</com.smile.box.app.widget.LineLayout>
+
+				<com.smile.box.app.widget.LineLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:color="?attr/TextColor"
+					android:text="系统"
+					android:layout_marginTop="20dp">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<com.smile.box.app.widget.CustomeGridView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:numColumns="2"
+							android:id="@+id/system"/>
+
+					</LinearLayout>
+
+				</com.smile.box.app.widget.LineLayout>
+
+				<com.smile.box.app.widget.LineLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:color="?attr/TextColor"
+					android:text="极客"
+					android:layout_marginTop="20dp">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<com.smile.box.app.widget.CustomeGridView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:numColumns="2"
+							android:id="@+id/geek"/>
+
+					</LinearLayout>
+
+				</com.smile.box.app.widget.LineLayout>
+
+				<com.smile.box.app.widget.LineLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:color="?attr/TextColor"
+					android:text="在线"
+					android:layout_marginTop="20dp">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<com.smile.box.app.widget.CustomeGridView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:numColumns="2"
+							android:id="@+id/music"/>
+
+					</LinearLayout>
+
+				</com.smile.box.app.widget.LineLayout>
+
+				<com.smile.box.app.widget.LineLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:color="?attr/TextColor"
+					android:text="小程序"
+					android:layout_marginTop="20dp">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<com.smile.box.app.widget.CustomeGridView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:numColumns="2"
+							android:id="@+id/program"/>
+
+					</LinearLayout>
+
+				</com.smile.box.app.widget.LineLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

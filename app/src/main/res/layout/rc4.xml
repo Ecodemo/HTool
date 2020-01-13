@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:layout_height="match_parent"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:background="@drawable/frame"
+		android:ems="10"
+		android:hint="请输入要加密的内容"
+		android:textColor="?attr/TextColor"
+		android:textColorHint="#BDBDBD"
+		android:gravity="top|left"
+		android:id="@+id/one_editor"
+		android:layout_margin="10dp"
+		android:layout_weight="1.0"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="加密"
+			android:background="@drawable/frame"
+			android:id="@+id/encode"/>
+
+		<EditText
+			android:layout_height="match_parent"
+			android:inputType="textMultiLine"
+			android:layout_width="match_parent"
+			android:background="@drawable/frame"
+			android:ems="10"
+			android:textColor="?attr/TextColor"
+			android:hint="密钥"
+			android:gravity="center"
+			android:id="@+id/key"
+			android:layout_weight="1.0"
+			android:textColorHint="#BDBDBD"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="解密"
+			android:background="@drawable/frame"
+			android:id="@+id/decode"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:layout_height="match_parent"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:textColorHint="#BDBDBD"
+		android:background="@drawable/frame"
+		android:ems="10"
+		android:textColor="?attr/TextColor"
+		android:hint="内容输出"
+		android:gravity="top|left"
+		android:id="@+id/tow_editor"
+		android:layout_margin="10dp"
+		android:layout_weight="1.0"/>
+
+</LinearLayout>
+

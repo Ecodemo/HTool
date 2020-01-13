@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="20dp">
+
+	<EditText
+		android:layout_height="match_parent"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_weight="1.0"
+		android:background="@drawable/frame"
+		android:id="@+id/input"
+		android:gravity="top|left"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		android:padding="4dp">
+
+		<Spinner
+			android:entries="@array/language"
+			android:id="@+id/translateSpinner"
+			android:layout_height="44dp"
+			android:layout_width="100dp"
+			android:background="@drawable/frame"
+			android:gravity="center"/>
+
+		<View
+			android:layout_height="0dp"
+			android:layout_width="20dp"/>
+
+		<Button
+			android:id="@+id/translate"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="44dp"
+			android:layout_width="wrap_content"
+			android:text="翻译"
+			android:layout_weight="1.0"
+			android:background="@drawable/frame"/>
+
+		<View
+			android:layout_height="0dp"
+			android:layout_width="20dp"/>
+
+		<Spinner
+			android:entries="@array/language"
+			android:id="@+id/translateSpinner2"
+			android:layout_height="44dp"
+			android:layout_width="100dp"
+			android:background="@drawable/frame"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:layout_height="match_parent"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_weight="1.0"
+		android:background="@drawable/frame"
+		android:id="@+id/output"
+		android:gravity="top|left"/>
+
+</LinearLayout>
+

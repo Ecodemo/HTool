@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="?attr/android:windowBackground">
+
+	<LinearLayout
+		android:layout_height="100dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_margin="20dp"
+		android:padding="10dp"
+		android:gravity="center"
+		android:background="@drawable/round">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="?attr/Logo"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:background="?attr/FrameColor"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"/>
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:fadingEdgeLength="0dip"
+		android:scrollbarStyle="outsideOverlay"
+		android:scrollbars="none"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_weight="1.0"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp">
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:gravity="center"
+			android:text="Copyright ©2018-2019 Jane dust.All Rights Reserved."
+			android:textSize="10sp"
+			android:layout_marginBottom="10dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

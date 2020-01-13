@@ -1,0 +1,7 @@
+res path mapping:
+    res/drawable -> R/a
+    res/layout -> R/b
+    res/menu -> R/c
+    res/mipmap -> R/d
+    res/raw -> R/e
+    res/xml -> R/f

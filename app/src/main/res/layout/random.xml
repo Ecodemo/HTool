@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="150dp"
+		android:layout_width="150dp"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="@drawable/frame">
+
+		<TextView
+			android:textColor="?attr/TextColor"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:id="@+id/nmb"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="150dp"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp"
+		android:gravity="center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="68dp"
+			android:ems="10"
+			android:inputType="number"
+			android:background="@drawable/frame"
+			android:id="@+id/start"
+			android:gravity="center"
+			android:hint="0"
+			android:text="0"/>
+
+		<View
+			android:background="?attr/TextColor"
+			android:layout_height="2dp"
+			android:layout_width="8dp"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:background="@drawable/frame"
+			android:id="@+id/end"
+			android:gravity="center"
+			android:text="100"
+			android:hint="100"/>
+
+	</LinearLayout>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="150dp"
+		android:text="生成"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/frame"
+		android:id="@+id/generate"/>
+
+</LinearLayout>
+
