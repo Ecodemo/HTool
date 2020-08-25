@@ -21,7 +21,7 @@
 
 	</LinearLayout>
 
-	<com.smile.box.app.tools.Color.view.ColorPickerView
+	<com.ecodemo.magic.box.app.tools.Color.view.ColorPickerView
 		android:id="@+id/colorpicker"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>

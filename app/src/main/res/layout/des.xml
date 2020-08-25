@@ -49,8 +49,7 @@
 			android:textColorHint="#BDBDBD"
 			android:layout_marginLeft="5dp"
 			android:layout_marginRight="5dp"
-			android:minLines="1"
-			android:maxLength="8"/>
+			android:minLines="1"/>
 
 		<Button
 			style="?android:attr/buttonBarButtonStyle"

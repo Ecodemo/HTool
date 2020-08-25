@@ -23,7 +23,7 @@
 
 	</LinearLayout>
 
-	<com.smile.box.app.widget.LineLayout
+	<com.ecodemo.magic.box.app.widget.LineLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:orientation="vertical"
@@ -41,7 +41,8 @@
 				android:layout_width="wrap_content"
 				android:text="正在加载..."
 				android:textColor="?attr/TextColor"
-				android:id="@+id/Daily"/>
+				android:id="@+id/Daily"
+				android:textSize="14dp"/>
 
 			<ProgressBar
 				android:layout_height="22dp"
@@ -50,9 +51,9 @@
 
 		</LinearLayout>
 
-	</com.smile.box.app.widget.LineLayout>
+	</com.ecodemo.magic.box.app.widget.LineLayout>
 
-	<com.smile.box.app.widget.LineLayout
+	<com.ecodemo.magic.box.app.widget.LineLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:orientation="vertical"
@@ -65,12 +66,13 @@
 			android:layout_width="match_parent"
 			android:orientation="vertical">
 
-			<com.smile.box.app.widget.LinkTextView
+			<com.ecodemo.magic.box.app.widget.LinkTextView
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
 				android:text="正在加载..."
 				android:textColor="?attr/TextColor"
-				android:id="@+id/announcement"/>
+				android:id="@+id/announcement"
+				android:textSize="14dp"/>
 
 			<ProgressBar
 				android:layout_height="22dp"
@@ -79,7 +81,7 @@
 
 		</LinearLayout>
 
-	</com.smile.box.app.widget.LineLayout>
+	</com.ecodemo.magic.box.app.widget.LineLayout>
 
 </LinearLayout>
 

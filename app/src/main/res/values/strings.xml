@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">氢·工具</string>
+    <string name="app_name">小木匣</string>
     <string name="accessibility_service_description">应用于获取应用程序栈顶Activity包名</string>
     <string name="msg_camera_framework_bug">相机被占用或没有相机权限，请检查</string>
     <string name="button_ok">退出</string>
@@ -223,5 +223,10 @@
 		<item>vi</item>
 		<item>zh-TW</item>
 		<item>zh-CN</item>
+	</string-array>
+	
+	<string-array name="code">
+		<item>Base64</item>
+		<item>HEX</item>
 	</string-array>
 </resources>

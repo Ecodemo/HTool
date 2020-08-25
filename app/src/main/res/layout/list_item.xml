@@ -6,11 +6,14 @@
 	android:orientation="vertical"
 	android:descendantFocusability="blocksDescendants">
 
-	<Button
-		style="?android:attr/buttonBarButtonStyle"
-		android:layout_height="wrap_content"
+	<TextView
+		android:background="?android:attr/selectableItemBackground"
+		android:layout_height="45dp"
 		android:layout_width="match_parent"
-		android:id="@+id/title"/>
+		android:id="@+id/title"
+		android:gravity="center"
+		android:textColor="?attr/TextColor"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
 
 </LinearLayout>
 

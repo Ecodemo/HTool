@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+	
+	<com.ecodemo.magic.box.app.BottomTabBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_bar_background="?android:attr/windowBackground"
+        app:tab_divider_background="?attr/NavigationBack"
+        app:tab_font_size="28px"
+        app:tab_img_font_padding="6dp"
+        app:tab_img_height="50px"
+        app:tab_img_width="50px"
+        app:tab_isshow_divider="true"
+        app:tab_padding_bottom="4px"
+        app:tab_padding_top="10px"
+        app:tab_selected_color="?android:attr/colorAccent"
+        app:tab_unselected_color="?attr/NavigationBack" />
+
+</LinearLayout>

@@ -51,7 +51,7 @@
 
 				</LinearLayout>
 
-				<com.smile.box.app.widget.LineLayout
+				<com.ecodemo.magic.box.app.widget.LineLayout
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
 					android:orientation="vertical"
@@ -64,7 +64,7 @@
 						android:layout_width="match_parent"
 						android:orientation="vertical">
 
-						<com.smile.box.app.widget.CustomeGridView
+						<com.ecodemo.magic.box.app.widget.CustomeGridView
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
 							android:numColumns="2"
@@ -72,9 +72,9 @@
 
 					</LinearLayout>
 
-				</com.smile.box.app.widget.LineLayout>
+				</com.ecodemo.magic.box.app.widget.LineLayout>
 
-				<com.smile.box.app.widget.LineLayout
+				<com.ecodemo.magic.box.app.widget.LineLayout
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
 					android:orientation="vertical"
@@ -87,7 +87,7 @@
 						android:layout_width="match_parent"
 						android:orientation="vertical">
 
-						<com.smile.box.app.widget.CustomeGridView
+						<com.ecodemo.magic.box.app.widget.CustomeGridView
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
 							android:numColumns="2"
@@ -95,9 +95,9 @@
 
 					</LinearLayout>
 
-				</com.smile.box.app.widget.LineLayout>
+				</com.ecodemo.magic.box.app.widget.LineLayout>
 
-				<com.smile.box.app.widget.LineLayout
+				<com.ecodemo.magic.box.app.widget.LineLayout
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
 					android:orientation="vertical"
@@ -110,7 +110,7 @@
 						android:layout_width="match_parent"
 						android:orientation="vertical">
 
-						<com.smile.box.app.widget.CustomeGridView
+						<com.ecodemo.magic.box.app.widget.CustomeGridView
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
 							android:numColumns="2"
@@ -118,9 +118,9 @@
 
 					</LinearLayout>
 
-				</com.smile.box.app.widget.LineLayout>
+				</com.ecodemo.magic.box.app.widget.LineLayout>
 
-				<com.smile.box.app.widget.LineLayout
+				<com.ecodemo.magic.box.app.widget.LineLayout
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
 					android:orientation="vertical"
@@ -133,7 +133,7 @@
 						android:layout_width="match_parent"
 						android:orientation="vertical">
 
-						<com.smile.box.app.widget.CustomeGridView
+						<com.ecodemo.magic.box.app.widget.CustomeGridView
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
 							android:numColumns="2"
@@ -141,30 +141,7 @@
 
 					</LinearLayout>
 
-				</com.smile.box.app.widget.LineLayout>
-
-				<com.smile.box.app.widget.LineLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:orientation="vertical"
-					android:color="?attr/TextColor"
-					android:text="小程序"
-					android:layout_marginTop="20dp">
-
-					<LinearLayout
-						android:layout_height="wrap_content"
-						android:layout_width="match_parent"
-						android:orientation="vertical">
-
-						<com.smile.box.app.widget.CustomeGridView
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:numColumns="2"
-							android:id="@+id/program"/>
-
-					</LinearLayout>
-
-				</com.smile.box.app.widget.LineLayout>
+				</com.ecodemo.magic.box.app.widget.LineLayout>
 
 			</LinearLayout>
 

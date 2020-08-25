@@ -38,7 +38,8 @@
 			<View
 				android:background="?android:attr/dividerHorizontal"
 				android:layout_height="match_parent"
-				android:layout_width="1dp"/>
+				android:layout_width="1dp"
+				android:id="@+id/line"/>
 
 			<ImageView
 				android:layout_height="wrap_content"

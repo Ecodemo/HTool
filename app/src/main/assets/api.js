@@ -1,7 +1,7 @@
-var TextView = com.smile.box.app.widget.MxTextView;
+var TextView = com.ecodemo.magic.box.app.widget.MxTextView;
 var ImageView = android.widget.ImageView;
-var Button = com.smile.box.app.widget.MxButton;
-var EditText = com.smile.box.app.widget.MxEditText;
+var Button = com.ecodemo.magic.box.app.widget.MxButton;
+var EditText = com.ecodemo.magic.box.app.widget.MxEditText;
 var ListView = android.widget.ListView;
 var RelativeLayout = android.widget.RelativeLayout;
 var LinearLayout = android.widget.LinearLayout;
@@ -11,4 +11,4 @@ var FrameLayout = android.widget.FrameLayout;
 var Gravity = android.view.Gravity;
 var AlertDialog = android.app.AlertDialog;
 var Dialog = android.app.Dialog;
-var WebView = com.smile.box.app.webview.MxWebView;
+var WebView = com.ecodemo.magic.box.app.webview.MxWebView;

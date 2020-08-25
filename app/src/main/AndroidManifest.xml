@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.smile.box" >
+    package="com.ecodemo.magic.box" >
 	<!-- 清除用户数据 -->
 	<uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
 	<!-- 拥有完全的网络访问权限 -->
@@ -40,14 +40,19 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- 读取您的USB存储设备中的内容 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<!--精确位置（基于GPS和网络）-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
-		android:name="com.smile.box.MxApplication"
+		android:name="com.ecodemo.magic.box.MxApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
 		android:resizeableActivity="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+		android:hardwareAccelerated="true"
+		android:networkSecurityConfig="@xml/network_security_config">
 		<!-- Android O刘海适配 start -->
         <!-- 华为 -->
         <meta-data
@@ -70,7 +75,7 @@
 			android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
 			android:windowSoftInputMode="adjustPan"
-			android:name="com.smile.box.MainActivity">
+			android:name="com.ecodemo.magic.box.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -78,34 +83,34 @@
         </activity>
 		<activity
 			android:screenOrientation="user"
-			android:name="com.smile.box.BrowserActivity"
+			android:name="com.ecodemo.magic.box.BrowserActivity"
 			android:configChanges="orientation|keyboardHidden|screenSize" />
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Whois"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.ErrorActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Ping"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Translate"/>
-		<activity android:screenOrientation="portrait" android:exported="true" android:name="com.smile.qrcode.android.CaptureActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.SoundActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Color.ColorSelector"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Base64"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Md5"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.RC4"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.AESEncode"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.DESEncode"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.SHA1"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Unicode"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.CompassActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.ImageToBase64"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.CurrentActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.GuaranteeDate"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.RandomActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.Decomment"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.MorseCoder"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.HtmlFormat"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.utils.RunScriptApp"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.AboutActivity"/>
-		<activity android:screenOrientation="portrait" android:name="com.smile.box.app.tools.JsRun"/>
-		<service android:name="com.smile.box.app.service.AccessibilityService"
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Whois"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.ErrorActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Ping"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Translate"/>
+		<activity android:screenOrientation="portrait" android:exported="true" android:name="com.ecodemo.magic.qrcode.android.CaptureActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.SoundActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Color.ColorSelector"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Base64"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Md5"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.RC4"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.AESEncode"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.DESEncode"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.SHA1"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Unicode"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.CompassActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.ImageToBase64"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.CurrentActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.GuaranteeDate"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.RandomActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.Decomment"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.MorseCoder"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.HtmlFormat"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.utils.RunScriptApp"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.AboutActivity"/>
+		<activity android:screenOrientation="portrait" android:name="com.ecodemo.magic.box.app.tools.JsRun"/>
+		<service android:name="com.ecodemo.magic.box.app.service.AccessibilityService"
 			android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
 			android:label="@string/app_name">
 			<intent-filter>

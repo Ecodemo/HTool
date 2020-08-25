@@ -3,11 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.smile.box"
+        applicationId "com.ecodemo.magic.box"
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 6
-        versionName "1.4.9"
+        versionName "1.4.200819(beta)"
     }
     buildTypes {
         release {
